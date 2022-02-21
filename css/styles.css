@@ -15,6 +15,14 @@ p {
   padding: 0;
 }
 
+.body {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
 ul,
 li {
   padding: 0;
@@ -22,22 +30,37 @@ li {
   list-style: none;
 }
 
-.body {
-  font-family: "Roboto", sans-serif;
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .container-header {
   display: flex;
   align-items: center;
+}
 
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+.nav,
+.nav-list,
+.list {
+  display: flex;
+  align-items: center;
 }
 
 .logo {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
@@ -59,17 +82,12 @@ li {
 .nav-list .nav-item + .nav-item {
   margin-left: 50px;
 }
-.nav,
-.nav-list {
-  display: flex;
-  align-items: center;
-  margin-top: 0;
-  margin-bottom: 0;
-}
+
 .nav-link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -130,9 +148,14 @@ li {
 
 .hero {
   background-color: #2f303a;
+  text-align: center;
 }
 
 .hero-title {
+  padding-top: 200px;
+  margin: 0 auto;
+  width: 696px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -140,6 +163,10 @@ li {
 }
 
 .hero-btn {
+  margin-top: 30px;
+  margin-bottom: 200px;
+  padding: 10px 32px;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -181,7 +208,23 @@ li {
   display: none;
 }
 
+.advantages {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.advantages-list {
+  display: flex;
+  align-items: center;
+}
+
+.advantages-list .advantages-item + .advantages-item {
+  margin-left: 30px;
+}
+
 .advantages-subtitle {
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.17;
@@ -196,15 +239,35 @@ li {
   color: var(--text-color);
 }
 
+.about {
+  padding-bottom: 94px;
+}
+
 .about-title {
+  margin-bottom: 50px;
+  text-align: center;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--title-color);
+}
+
+.about-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-list .about-item + .about-item {
+  margin-left: 30;
 }
 
 .team-title {
+  margin-bottom: 50px;
+  text-align: center;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -212,7 +275,31 @@ li {
   color: var(--title-color);
 }
 
+.team-list {
+  display: flex;
+  align-items: center;
+}
+
+.team-item {
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-list .team-item + .team-item {
+  margin-left: 30px;
+}
+
+.team-card {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .team-name {
+  margin-bottom: 10px;
+  text-align: center;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -221,6 +308,8 @@ li {
 }
 
 .desc {
+  text-align: center;
+
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
@@ -228,7 +317,16 @@ li {
 }
 
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background-color: #2f303a;
+}
+
+.footer-list {
+  display: block;
+  margin-top: 111px;
+  margin-bottom: 60px;
 }
 
 .footer-address {
