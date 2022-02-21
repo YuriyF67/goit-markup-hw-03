@@ -264,6 +264,13 @@ img {
   margin-left: 30;
 }
 
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  width: 100%;
+
+  background-color: #f5f4fa;
+}
 .team-title {
   margin-bottom: 50px;
   text-align: center;
@@ -323,10 +330,13 @@ img {
   background-color: #2f303a;
 }
 
+.footer-link {
+  padding-top: 100px;
+}
 .footer-list {
   display: block;
-  margin-top: 111px;
-  margin-bottom: 60px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 .footer-address {
