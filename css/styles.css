@@ -192,8 +192,10 @@ color: var(--active-color);
 
 .features-list {
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
     gap: 24px;
+    flex-basis: calc((100% - 72px) / 4);
 }
 
 .features-subtitle {
@@ -237,7 +239,10 @@ color: var(--active-color);
 
 .work-list {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    flex-basis: calc((100% - 48px) / 3);
 }
 
 /* ==================/WORK==================== */
@@ -253,6 +258,7 @@ color: var(--active-color);
     align-items: center;
     flex-wrap: wrap;
     gap: 24px;
+    flex-basis: calc((100% - 72px) / 4);
 }
 
 .team-title {
@@ -364,6 +370,7 @@ color: var(--active-color);
     align-items: center;
     flex-wrap: wrap;
     gap: 24px;
+    flex-basis: calc((100% - 48px) / 3);
 }
 
 .card-content {
