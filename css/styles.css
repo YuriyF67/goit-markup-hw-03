@@ -149,6 +149,8 @@ color: var(--active-color);
 
 /* ==================HERO==================== */
 .hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
     text-align: center;
 }
 
@@ -298,7 +300,26 @@ color: var(--active-color);
 
 /* ===================PROJECTS================ */
 
-.filter-btn {
+.projects {
+    padding-top: 96px;
+}
+
+.filters {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 72px;
+    gap: 24px;
+}
+
+
+.filters-btn {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
+
+
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -310,10 +331,9 @@ color: var(--active-color);
     cursor: pointer;
 }
 
-.filter-btn:hover,
-.filter-btn:focus,
-.filter-btn:visited {
-    color: var(--active-color);
+.filters-list .active {
+    color: var(--white-color);
+    background-color: var(--active-color);
 }
 
 .card {
@@ -321,19 +341,36 @@ color: var(--active-color);
 }
 
 .card-title {
+    padding-left: 16px;
+    margin-bottom: 8px;
+
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
-    text-align: center;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
 }
 
 .card-text {
+    padding-left: 16px;
+
     font-size: 16px;
     line-height: 1.5;
-    text-align: center;
     letter-spacing: 0.02em;
+}
+
+.project-cards {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.card-content {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    border: 1px solid var(--cornflower-bg-color);
+    border-top: none;
 }
 
 /* ==================/PROJECTS================ */
