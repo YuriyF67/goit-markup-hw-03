@@ -48,11 +48,27 @@ ul {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 /* =================/RESET===================== */
 
 /* ==================COMPONENTS================ */
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 
 .container {
     width: 1158px;
@@ -82,8 +98,8 @@ img {
 /* ==================HEADER==================== */
 
 .header {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    /* padding-top: 24px;
+    padding-bottom: 24px; */
     border-bottom: 1px solid var(--cornflower-bg-color);
 }
 
@@ -107,6 +123,8 @@ img {
 }
 
 .logo {
+    padding-top: 24px;
+    padding-bottom: 24px;
     margin-right: 76px;
 
     font-family: var(--secondary-font);
@@ -125,6 +143,9 @@ img {
 }
 
 .nav-menu-link {
+    padding-top: 24px;
+    padding-bottom: 24px;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -139,6 +160,9 @@ color: var(--active-color);
 
 .mail,
 .tel {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -325,7 +349,6 @@ color: var(--active-color);
     padding-left: 24px;
     padding-right: 24px;
 
-
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -391,6 +414,7 @@ color: var(--active-color);
 
 .footer .logo {
     margin-bottom: 16px;
+    margin-right: 0;
 }
 
 .logo-footer {
