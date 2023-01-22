@@ -162,7 +162,7 @@ color: var(--active-color);
 .tel {
     padding-top: 24px;
     padding-bottom: 24px;
-    
+
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -370,7 +370,6 @@ color: var(--active-color);
 }
 
 .card-title {
-    padding-left: 16px;
     margin-bottom: 8px;
 
     font-weight: 500;
@@ -381,8 +380,6 @@ color: var(--active-color);
 }
 
 .card-text {
-    padding-left: 16px;
-
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -399,6 +396,7 @@ color: var(--active-color);
 .card-content {
     padding-top: 32px;
     padding-bottom: 32px;
+    padding-left: 16px;
     border: 1px solid var(--cornflower-bg-color);
     border-top: none;
 }
@@ -413,6 +411,8 @@ color: var(--active-color);
 }
 
 .footer .logo {
+    padding-top: 0;
+    padding-bottom: 0;
     margin-bottom: 16px;
     margin-right: 0;
 }
